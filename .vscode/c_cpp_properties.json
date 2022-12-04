@@ -3,7 +3,7 @@
         {
             "name": "Win32",
             "includePath": [
-                "${fileDirname}/**",
+                "${workspaceFolder}/**",
                 "${workspaceFolder}/Union"
             ],
             "defines": [
