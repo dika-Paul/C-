@@ -3,10 +3,6 @@
 
 #include<vector>
 
-enum ret_val{
-    OPER_SUCCESS, OPER_FAIL
-};
-
 class Union
 {
 public:

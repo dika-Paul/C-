@@ -11,7 +11,7 @@ Union::Union(size_t n)
     for(int i = 0; i < n; i++)
     {
         this->_father[i] = i;
-        this->_rank[i] = i;
+        this->_rank[i] = 1;
     }
 }
 
