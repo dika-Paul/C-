@@ -148,11 +148,12 @@ int Tree::Width()
     }
     return width;
 }
+
 /*
 int main()
 {
     Tree T;
     T.Init_Tree();
-    cout << T.Width() << " " << T.Hight();
+    cout << "width:" << T.Width() << " higth:" << T.Hight();
     return 0;
 }*/

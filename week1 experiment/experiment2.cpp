@@ -65,9 +65,29 @@ bool UFSet::is_connect(int ptr1, int ptr2)
 
 int main()
 {
+    string cmd;
     UFSet U(15);
-    U.Union(0,1);
-    U.Union(1,9);
-    cout << U.is_connect(0, 9);
+    do
+    {
+        cin >> cmd;
+        if(cmd == "find")
+        {
+            int ptr;
+            cin >> ptr;
+            cout << U.find(ptr);
+        }
+        else if(cmd == "union")
+        {
+            int ptr1, ptr2;
+            cin >> ptr1 >> ptr2;
+            U.Union(ptr1, ptr2);
+        }
+        else if(cmd == "is connect")
+        {
+            int ptr1, ptr2;
+            cin >> ptr1 >> ptr2;
+            cout << U.is_connect(ptr1, ptr2);
+        }
+    } while (cmd != "exit");
     return 0;
 }
