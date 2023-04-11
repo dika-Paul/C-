@@ -2,8 +2,22 @@
 
 using namespace std;
 
+class A
+{
+    public:
+        void go();
+};
+
+class B : public A
+{
+};
+
+void go(A temp);
+
+
 int main()
 {
-    cout << "hello";
+    char* str = "aaaaaa";
+    cout << strlen(str);
     return 0;
 }

@@ -66,3 +66,8 @@ int UFSet<Type>::_find(Type elem)
             return i;
     return -1;
 }
+
+int main()
+{
+    return 0;
+}

@@ -148,7 +148,6 @@ int Tree::Width()
     }
     return width;
 }
-
 /*
 int main()
 {

@@ -10,6 +10,13 @@ public:
     int find(int ptr);
     void Union(int ptr1, int ptr2);
     bool is_connect(int ptr1, int ptr2);
+    void print()
+    {
+        for(int i = 0; i < parent.size(); i++)
+        {
+            cout << i << ":" << parent[i] << endl;
+        }
+    }
 
     UFSet()
         :parent(10),
@@ -82,12 +89,7 @@ int main()
             cin >> ptr1 >> ptr2;
             U.Union(ptr1, ptr2);
         }
-        else if(cmd == "is connect")
-        {
-            int ptr1, ptr2;
-            cin >> ptr1 >> ptr2;
-            cout << U.is_connect(ptr1, ptr2);
-        }
+        U.print();
     } while (cmd != "exit");
     return 0;
 }
